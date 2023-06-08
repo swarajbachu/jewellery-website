@@ -1,6 +1,8 @@
+'use client'
+
 import React from "react";
 import Image from "next/image";
-import { Parallax } from "react-scroll-parallax";
+import Button from "./button";
 
 
 const HeroSection = () => {
@@ -26,9 +28,7 @@ const HeroSection = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           voluptatum.
         </p>
-        <button className="bg-black text-white px-4 py-2 rounded-md">
-          Shop Now
-        </button>
+        <Button text="Contact Us" onClick={() => {}} />
       </div>
     </div>
   );
