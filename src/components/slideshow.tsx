@@ -26,20 +26,18 @@ const Slideshow = () => {
       >
         {slides[currentIndex]}
       </motion.div>
-      <div className="absolute z-50 top-1/2">
         <BsFillArrowLeftCircleFill
-          className="left-2 text-3xl absolute z-40"
+          className="left-2 text-3xl top-1/2 text-gray-600 cursor-pointer absolute z-40"
           onClick={() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
           }}
         />
         <BsFillArrowRightCircleFill
-          className="absolute text-3xl left-[98vw] z-40"
+          className="absolute cursor-pointer top-1/2 text-gray-600 text-3xl right-2  z-[200]"
           onClick={() => {
             setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
           }}
         />
-      </div>
     </AnimatePresence>
     </div>
 

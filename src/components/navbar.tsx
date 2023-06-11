@@ -83,7 +83,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <Navbar className="mx-auto z-40 fixed  max-w-screen-xl w-full px-6 py-3 sm:my-2">
+    <Navbar className=" z-40 fixed  max-w-screen-xl w-full px-6 py-3 lg:mt-2">
       <div className="flex items-center justify-between text-blue-gray-900">
         <div className="flex items-center gap-2">
           <img src="/logo.png" className="h-12 w-12 rounded-full" />

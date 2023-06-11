@@ -16,33 +16,41 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="bg-slate-100 min-h-[90vh] relative dark:bg-gray-900 flex flex-col justify-center items-center"
+      className="bg-slate-100 relative dark:bg-gray-900 flex flex-col justify-center items-center"
     >
-      <h2 className="text-2xl font-bold">About US</h2>
+      <h2 className="text-2xl my-10 font-bold">About US</h2>
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <TextAnimation>
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-gray-100">
+          {/* <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-gray-100">
             We didn't reinvent the wheel
-          </h2>
+          </h2> */}
           <p className="mb-4">
-            We are JEWELERS. Innovators and problem solvers. Small enough to be
-            simple and quick, but big enough to deliver the scope you want at
-            the pace you need. Small enough to be simple and quick, but big
-            enough to deliver the scope you want at the pace you need.
+            Welcome to Jhunjhunwala Diamonds, your premier destination for
+            exquisite diamond jewellery and precious stones. At Jhunjhunwala
+            Diamonds, we believe in the inherent beauty and individuality of
+            each diamond. With our founder's extensive education and experience,
+            we have curated a captivating collection of unique designs that
+            reflect our commitment to quality and craftsmanship.
           </p>
-          <p>
-            We are strategists, designers and developers. Innovators and problem
-            solvers. Small enough to be simple and quick.
+          <p className="mb-4">
+            Our skilled artisans and gemologists meticulously handpick diamonds
+            that possess unparalleled brilliance and character, ensuring that
+            every piece in our collection is truly one-of-a-kind. We take pride
+            in offering GIA, IGI, HRD certified solitaire diamonds, providing
+            you with the utmost assurance of authenticity and superior quality.
+          </p>
+          <p className="mb-4">
+          From elegant solitaire rings to stunning necklaces, earrings and more, our diverse range of collection caters to every taste and occasion. We understand that finding the perfect piece of jewellery is a deeply personal experience, which is why we offer customization options. You have the freedom to choose the gold purity, diamond quality, and design elements that resonate with your unique style.
           </p>
         </TextAnimation>
         <div className="grid grid-cols-2 gap-4 mt-8">
           <KenBurnsImage
-            src="https://img.freepik.com/free-photo/model-shows-earrings-ring-with-beautiful-blue-precious-stones_8353-5043.jpg?w=1060&t=st=1686238429~exp=1686239029~hmac=bd1e4b5e965c8a62d2a467393eac701e21e7e03d66920db1d0901b78a06ce011"
-            alt="office content 1"
+          src="/about-1.jpg"
+            alt="About Diamonds 1"
           />
           <KenBurnsImage
-            src="https://img.freepik.com/free-photo/portrait-young-woman-with-earrings-with-gems-isolated_132075-10060.jpg?w=1060&t=st=1686238456~exp=1686239056~hmac=80bfbf0f700870bbbfb25fc3083537a2c56391dba45452cb09e3cb39306c04df"
-            alt="office content 2"
+          src="/about-2.jpg"
+            alt="About Diamonds 2"
           />
         </div>
       </div>

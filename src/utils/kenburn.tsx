@@ -27,12 +27,14 @@ interface kenburn{
     whileInView="visible"
     variants={Varient}
   >
-    <div className="relative rounded-lg max-w-xs overflow-hidden bg-cover bg-no-repeat">
+<div className="relative h-full rounded-lg overflow-hidden">
   <img
     src={src}
-    className="max-w-xs shadow-sm  transition duration-300 ease-in-out hover:scale-110"
-    alt={alt} />
+    className="w-full h-full object-cover object-center shadow-sm transition duration-300 ease-in-out hover:scale-110"
+    alt={alt}
+  />
 </div>
+
   </motion.div>
   )
 }
