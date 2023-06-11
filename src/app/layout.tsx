@@ -1,6 +1,7 @@
 import NavBar from '@/components/navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Footer from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
         <div>
         {children}
         </div>
+        <Footer />
 
         </body>
     </html>

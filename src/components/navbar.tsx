@@ -18,7 +18,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#about" className="flex items-center hover:text-blue-500 transition-colors">
+        <a href="/#about" className="flex items-center hover:text-blue-500 transition-colors">
           About
         </a>
       </Typography>
@@ -28,7 +28,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#products" className="flex items-center hover:text-blue-500 transition-colors">
+        <a href="/#products" className="flex items-center hover:text-blue-500 transition-colors">
           Products
         </a>
       </Typography>
