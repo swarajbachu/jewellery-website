@@ -18,8 +18,8 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-          Pages
+        <a href="#about" className="flex items-center hover:text-blue-500 transition-colors">
+          About
         </a>
       </Typography>
       <Typography
@@ -28,8 +28,8 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-          Account
+        <a href="#products" className="flex items-center hover:text-blue-500 transition-colors">
+          Products
         </a>
       </Typography>
       <Typography
@@ -38,8 +38,8 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-          Blocks
+        <a href="/faq" className="flex items-center hover:text-blue-500 transition-colors">
+          FAQ
         </a>
       </Typography>
       <Typography
@@ -48,15 +48,15 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-          Docs
+        <a href="/contact" className="flex items-center hover:text-blue-500 transition-colors">
+          Contact
         </a>
       </Typography>
     </ul>
   );
 }
  
-export default function Example() {
+export default function NavBar () {
   const [openNav, setOpenNav] = React.useState(false);
  
   const handleWindowResize = () =>
@@ -71,15 +71,16 @@ export default function Example() {
   }, []);
  
   return (
-    <Navbar className="mx-auto max-w-screen-xl w-full px-6 py-3 sm:my-2">
+    
+    <Navbar className="mx-auto z-40 sticky  max-w-screen-xl w-full px-6 py-3 sm:my-2">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
-          href="#"
+          href="/"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5"
         >
-          Material Tailwind
+          JhunJhunWala Dimonds
         </Typography>
         <div className="hidden lg:block">
           <NavList />
