@@ -1,9 +1,9 @@
 import NavBar from '@/components/navbar'
 import './globals.css'
-import { Lora } from 'next/font/google'
+import { Playfair_Display } from 'next/font/google'
 import Footer from '@/components/footer'
 
-const lora = Lora({ subsets: ['latin'] })
+const font = Playfair_Display({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,8 +13,10 @@ export const metadata = {
 export default function RootLayout({children,}: {children: React.ReactNode}) {
   return (
     <html lang="en">
-      <body className={` relative ${lora.className}`}>
+      <body className={` relative ${font.className}`}>
+        <div className='flex justify-center w-full'>
         <NavBar />
+        </div>
         <div>
         {children}
         </div>

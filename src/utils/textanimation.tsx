@@ -20,6 +20,7 @@ import React from 'react'
     className="font-light text-gray-600 sm:text-lg dark:text-gray-300"
     initial="hidden"
     whileInView="visible"
+    viewport={{once: true}}
     variants={textVariant}
   >
       {children}

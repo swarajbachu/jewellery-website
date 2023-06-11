@@ -12,3 +12,22 @@
   filter: drop-shadow(2 2 5px rgba(0, 0, 0, 0.5));
 }
 
+.arrow-container {
+  position: absolute;
+  top: 50%;
+  z-index: 50;
+}
+
+.arrow-left {
+  position: absolute;
+  left: 10px;
+  z-index: 51;
+}
+
+.arrow-right {
+  position: absolute;
+  right: 20px;
+  z-index: 52;
+}
+
+

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import {
@@ -8,7 +8,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
- 
+
 function NavList() {
   return (
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
@@ -18,7 +18,10 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="/#about" className="flex items-center hover:text-blue-500 transition-colors">
+        <a
+          href="/#about"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
           About
         </a>
       </Typography>
@@ -28,7 +31,10 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="/#products" className="flex items-center hover:text-blue-500 transition-colors">
+        <a
+          href="/#products"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
           Products
         </a>
       </Typography>
@@ -38,7 +44,10 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="/faq" className="flex items-center hover:text-blue-500 transition-colors">
+        <a
+          href="/faq"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
           FAQ
         </a>
       </Typography>
@@ -48,40 +57,50 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="/contact" className="flex items-center hover:text-blue-500 transition-colors">
+        <a
+          href="/contact"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
           Contact
         </a>
       </Typography>
     </ul>
   );
 }
- 
-export default function NavBar () {
+
+export default function NavBar() {
   const [openNav, setOpenNav] = React.useState(false);
- 
+
   const handleWindowResize = () =>
     window.innerWidth >= 960 && setOpenNav(false);
- 
+
   React.useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
- 
+
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
- 
+
   return (
-    
-    <Navbar className="mx-auto z-40 sticky  max-w-screen-xl w-full px-6 py-3 sm:my-2">
+    <Navbar className="mx-auto z-40 fixed  max-w-screen-xl w-full px-6 py-3 sm:my-2">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as="a"
-          href="/"
-          variant="h6"
-          className="mr-4 cursor-pointer py-1.5"
-        >
-          JhunJhunWala Dimonds
-        </Typography>
+        <div className="flex items-center gap-2">
+          <img src="/logo.png" className="h-12 w-12 rounded-full" />
+          <div className="flex flex-col justify-center items-center">
+            <h1
+              className="cursor-pointer tracking-[1px] font-semibold  pt-1.5"
+            >
+              JHUNJHUNWALA DIAMONDS
+            </h1>
+            <h5
+              className="font-medium font-sans"
+            >
+              Every Diamond Is Unique
+            </h5>
+          </div>
+        </div>
+
         <div className="hidden lg:block">
           <NavList />
         </div>

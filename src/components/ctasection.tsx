@@ -1,16 +1,20 @@
+'use client'
+
+import KenBurn from "@/utils/kenburn";
+import TextAnimation from "@/utils/textanimation";
 import React from "react";
 
 const CTA = () => {
   return (
     <section className="bg-slate-100 dark:bg-slate-900">
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <img
-          className="w-full rounded-lg shadow-sm"
+        <KenBurn
           src="https://images.unsplash.com/photo-1531995811006-35cb42e1a022?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80"
           alt="dashboard image"
         />
 
         <div className="mt-4 md:mt-0">
+          <TextAnimation>
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-slate-100">
             Let's create more tools and ideas that brings us together.
           </h2>
@@ -37,6 +41,7 @@ const CTA = () => {
               ></path>
             </svg>
           </a>
+          </TextAnimation>
         </div>
       </div>
     </section>
