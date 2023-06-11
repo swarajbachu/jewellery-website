@@ -20,8 +20,8 @@ const faqs = [
 
 const FAQ: React.FC = () => {
   return (
-    <section className="flex flex-col w-full justify-center items-center min-h-[80vh] bg-slate-100 px-4">
-        <h1 className="text-3xl font-bold mb-10">
+    <section className="flex flex-col w-full justify-center dark:bg-slate-900 items-center min-h-[80vh] bg-slate-100 px-4 dark:text-slate-100">
+        <h1 className="text-3xl font-bold mb-10 ">
             FAQ Section
         </h1>
     <div className="flex flex-col md:flex-row w-full gap-5 md:w-[80%]">

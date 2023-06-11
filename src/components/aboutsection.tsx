@@ -22,10 +22,10 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="bg-slate-100 min-h-[90vh] flex flex-col justify-center">
+    <section id="about" className="bg-slate-100 min-h-[90vh]  dark:bg-gray-900 flex flex-col justify-center">
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div className="font-light text-gray-600 sm:text-lg">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
+        <div className="font-light text-gray-600 sm:text-lg dark:text-gray-300">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-gray-100">
             We didn't reinvent the wheel
           </h2>
           <p className="mb-4">
