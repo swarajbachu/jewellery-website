@@ -13,7 +13,6 @@ export default function Home() {
       <AboutSection />
       <About2 />
       <Gallery  />
-      <Products />
       <CTA />
     </div>
   )

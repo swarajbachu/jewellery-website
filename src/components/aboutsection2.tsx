@@ -43,9 +43,7 @@ const About2 = () => {
             We invite you to embark on a mesmerizing journey into the world of
             diamonds with Jhunjhunwala Diamonds. Explore our collection,
             discover the perfect piece that resonates with your style and story,
-            and let us be a part of your precious moments. Every diamond is
-            unique, and we are here to help you find the one that shines
-            brightest for you.
+            and let us be a part of your precious moments. 
           </p>
         </TextAnimation>
       </div>

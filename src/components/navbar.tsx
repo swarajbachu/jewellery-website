@@ -12,6 +12,19 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function NavList() {
   return (
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+            <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <a
+          href="/"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
+          Home
+        </a>
+      </Typography>
       <Typography
         as="li"
         variant="small"
@@ -45,10 +58,10 @@ function NavList() {
         className="p-1 font-medium"
       >
         <a
-          href="/faq"
+          href="#"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
-          FAQ
+          Testimonials
         </a>
       </Typography>
       <Typography
@@ -61,7 +74,7 @@ function NavList() {
           href="/contact"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
-          Contact
+          Contact Us
         </a>
       </Typography>
     </ul>

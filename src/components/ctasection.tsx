@@ -9,15 +9,15 @@ const CTA = () => {
     <section className="bg-slate-100 dark:bg-slate-900">
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <KenBurn
-          src="https://images.unsplash.com/photo-1531995811006-35cb42e1a022?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80"
-          alt="dashboard image"
+          src="/Cta.jpg"
+          alt="diamond Rings"
         />
-
         <div className="mt-4 md:mt-0">
           <TextAnimation>
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-slate-100">
-            Let's create more tools and ideas that brings us together.
-          </h2>
+          <h2 className="mb-4 text-3xl tracking-tight font-bold text-gray-900 dark:text-slate-100">
+          Every diamond is
+            unique, and we are here to help you find the one that shines
+            brightest for you.          </h2>
           <p className="mb-6 font-light text-gray-500 md:text-lg">
             JhunJhunwala Jewellery helps you connect with friends and communities of people
             who share your interests. Connecting with your friends and family as

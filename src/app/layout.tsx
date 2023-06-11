@@ -2,6 +2,7 @@ import NavBar from '@/components/navbar'
 import './globals.css'
 import { Playfair_Display } from 'next/font/google'
 import Footer from '@/components/footer'
+import Whatsapp from '@/components/whatsapp'
 
 const font = Playfair_Display({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
         <div>
         {children}
         </div>
+        <Whatsapp />
         <Footer />
 
         </body>
