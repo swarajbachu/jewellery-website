@@ -2,6 +2,8 @@
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
+import axios from 'axios';
+
 
 
 function classNames(...classes: (string | boolean)[]): string {
@@ -11,6 +13,29 @@ function classNames(...classes: (string | boolean)[]): string {
 
 export default function ContactUs() {
   const [agreed, setAgreed] = useState(false)
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [message, setMessage] = useState('');
+  const [company, setCompany] = useState('');
+
+  const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData();
+    formData.append('firstName', firstName);
+    formData.append('lastName', lastName);
+    formData.append('company', company);
+    formData.append('email', email);
+    formData.append('phoneNumber', phoneNumber);
+    formData.append('message', message);
+  
+    try {
+      await axios.post('/api/sendEmail', formData);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <div className="isolate  bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -49,6 +74,7 @@ export default function ContactUs() {
                 id="first-name"
                 autoComplete="given-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
           </div>
@@ -63,6 +89,7 @@ export default function ContactUs() {
                 id="last-name"
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                onChange={(e) => setLastName(e.target.value)}
               />
             </div>
           </div>
@@ -77,6 +104,7 @@ export default function ContactUs() {
                 id="company"
                 autoComplete="organization"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                onChange={(e) => setCompany(e.target.value)}
               />
             </div>
           </div>
@@ -91,6 +119,7 @@ export default function ContactUs() {
                 id="email"
                 autoComplete="email"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
           </div>
@@ -123,6 +152,7 @@ export default function ContactUs() {
                 id="phone-number"
                 autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                onChange={(e) => setPhoneNumber(e.target.value)}
               />
             </div>
           </div>
@@ -137,6 +167,7 @@ export default function ContactUs() {
                 rows={4}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 defaultValue={''}
+                onChange={(e) => setMessage(e.target.value)}
               />
             </div>
           </div>

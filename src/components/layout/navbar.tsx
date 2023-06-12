@@ -58,7 +58,7 @@ function NavList() {
         className="p-1 font-medium"
       >
         <a
-          href="#"
+          href="#testimonials"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           Testimonials

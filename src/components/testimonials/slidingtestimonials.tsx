@@ -13,7 +13,7 @@ const SlidingTestimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
-    <div>
+    <section id="testimonials">
       <h2 className="text-center text-4xl font-bold">Testimonials</h2>
       <div className="relative mx-auto  max-w-screen-xl gap-4 center py-8 px-4 sm:py-16 lg:px-6">
         <AnimatePresence mode="wait">
@@ -48,7 +48,7 @@ const SlidingTestimonial = () => {
           />
         </AnimatePresence>
       </div>
-    </div>
+    </section>
   );
 };
 
