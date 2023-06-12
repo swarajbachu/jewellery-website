@@ -9,9 +9,9 @@ const Slideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const slides = [
-    <HeroSection key={0} heading="Just heading 1 for slide 1" subheading="subheading for slide 1" img="/hero.jpeg"/>,
-    <HeroSection key={1} heading="Just heading 2 for slide 2" subheading="subheading for slide 2" img="/hero.jpeg"/>,
-    <HeroSection key={2} heading="Just heading 3 for slide 3" subheading="subheading for slide 3" img="/hero.jpeg"/>,
+    <HeroSection key={0} heading="Just heading 1 for slide 1" subheading="subheading for slide 1" img="/hero-1.jpg"/>,
+    <HeroSection key={1} heading="Just heading 2 for slide 2" subheading="subheading for slide 2" img="/hero-2.jpg"/>,
+    <HeroSection key={2} heading="Just heading 3 for slide 3" subheading="subheading for slide 3" img="https://images.unsplash.com/photo-1518370265276-f22b706aeac8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80"/>,
   ];
 
   return (
@@ -26,13 +26,13 @@ const Slideshow = () => {
         {slides[currentIndex]}
       </motion.div>
         <BsFillArrowLeftCircleFill
-          className="left-2 text-3xl top-1/2 text-gray-600 cursor-pointer absolute z-40"
+          className="left-2 text-3xl top-1/2 text-gray-100 cursor-pointer absolute z-40"
           onClick={() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
           }}
         />
         <BsFillArrowRightCircleFill
-          className="absolute cursor-pointer top-1/2 text-gray-600 text-3xl right-2  z-[200]"
+          className="absolute cursor-pointer top-1/2 text-gray-100 text-3xl right-2  z-[200]"
           onClick={() => {
             setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
           }}

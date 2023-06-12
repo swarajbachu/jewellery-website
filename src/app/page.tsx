@@ -1,8 +1,9 @@
 import AboutSection from '@/components/About/aboutsection'
 import About2 from '@/components/About/aboutsection2'
 import CTA from '@/components/ctasection'
-import Gallery from '@/components/gallery'
-import Slideshow from '@/components/slideshow'
+import Slideshow from '@/components/herosections/slideshow'
+import Gallery from '@/components/products/gallery'
+
 import SlidingTestimonial from '@/components/testimonials/slidingtestimonials'
 
 

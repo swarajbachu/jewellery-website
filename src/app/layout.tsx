@@ -1,8 +1,9 @@
-import NavBar from '@/components/navbar'
+import NavBar from '@/components/layout/navbar'
 import './globals.css'
 import { Playfair_Display } from 'next/font/google'
-import Footer from '@/components/footer'
-import Whatsapp from '@/components/whatsapp'
+import Whatsapp from '@/components/layout/whatsapp'
+import Footer from '@/components/layout/footer'
+
 
 const font = Playfair_Display({ subsets: ['latin'] })
 
