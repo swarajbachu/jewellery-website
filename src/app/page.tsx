@@ -1,9 +1,9 @@
-import AboutSection from '@/components/aboutsection'
-import About2 from '@/components/aboutsection2'
+import AboutSection from '@/components/About/aboutsection'
+import About2 from '@/components/About/aboutsection2'
 import CTA from '@/components/ctasection'
 import Gallery from '@/components/gallery'
-import Products from '@/components/products'
 import Slideshow from '@/components/slideshow'
+import SlidingTestimonial from '@/components/testimonials/slidingtestimonials'
 
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <About2 />
       <Gallery  />
+      <SlidingTestimonial />
       <CTA />
     </div>
   )

@@ -16,7 +16,6 @@ const Slideshow = () => {
 
   return (
     <div className="relative">
-
     <AnimatePresence mode='wait'>
       <motion.div
         key={currentIndex}
