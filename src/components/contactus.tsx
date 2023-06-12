@@ -21,20 +21,7 @@ export default function ContactUs() {
   const [company, setCompany] = useState('');
 
   const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append('firstName', firstName);
-    formData.append('lastName', lastName);
-    formData.append('company', company);
-    formData.append('email', email);
-    formData.append('phoneNumber', phoneNumber);
-    formData.append('message', message);
-  
-    try {
-      await axios.post('/api/sendEmail', formData);
-    } catch (error) {
-      console.error(error);
-    }
+//will do ti later
   };
 
   return (
