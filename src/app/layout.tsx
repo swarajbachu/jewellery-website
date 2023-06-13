@@ -3,13 +3,14 @@ import './globals.css'
 import { Playfair_Display } from 'next/font/google'
 import Whatsapp from '@/components/layout/whatsapp'
 import Footer from '@/components/layout/footer'
+import Footers from '@/components/layout/footers'
 
 
 const font = Playfair_Display({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'JhunJhunWala Diamonds',
-  description: 'JhunJhunWala Diamonds',
+  title: 'Jhunjhunwala Diamonds',
+  description: 'Jhunjhunwala Diamonds',
 }
 
 export default function RootLayout({children,}: {children: React.ReactNode}) {
@@ -23,7 +24,7 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
         {children}
         </div>
         <Whatsapp />
-        <Footer />
+        <Footers />
 
         </body>
     </html>

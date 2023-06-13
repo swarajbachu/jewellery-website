@@ -17,7 +17,7 @@ import React from 'react'
 
   return (
     <motion.div
-    className="font-light text-gray-600 sm:text-lg dark:text-gray-300"
+    className="font-light text-gray-800 sm:text-lg dark:text-gray-300"
     initial="hidden"
     whileInView="visible"
     viewport={{once: true}}

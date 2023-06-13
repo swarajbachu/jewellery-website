@@ -24,7 +24,7 @@ const Gallery = () => {
     },
     {
       src: "/Pendant.webp",
-      alt: "Pendant",
+      alt: "Pendants",
     },
     {
       src: "/Tanmaniyas.webp",

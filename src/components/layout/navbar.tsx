@@ -102,15 +102,15 @@ export default function NavBar() {
           <img src="/logo.png" className="h-12 w-12 rounded-full" />
           <div className="flex flex-col justify-center items-center">
             <h1
-              className="cursor-pointer tracking-[1px] font-semibold  pt-1.5"
+              className="cursor-pointer tracking-[1px] font-semibold "
             >
               JHUNJHUNWALA DIAMONDS
             </h1>
-            <h5
+            {/* <h5
               className="font-medium font-sans"
             >
               Every Diamond Is Unique
-            </h5>
+            </h5> */}
           </div>
         </div>
 

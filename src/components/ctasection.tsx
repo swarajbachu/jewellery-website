@@ -18,11 +18,11 @@ const CTA = () => {
           Every diamond is
             unique, and we are here to help you find the one that shines
             brightest for you.          </h2>
-          <p className="mb-6 font-light text-gray-500 md:text-lg">
+          {/* <p className="mb-6 font-light text-gray-500 md:text-lg">
             JhunJhunwala Jewellery helps you connect with friends and communities of people
             who share your interests. Connecting with your friends and family as
             well as discovering new ones is easy with features like Groups.
-          </p>
+          </p> */}
           <a
             href="#"
             className="inline-flex items-center text-white bg-black hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-gray-900 dark:bg-slate-100 dark:text-gray-900 dark:hover:bg-gray-100"
