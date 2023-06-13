@@ -10,7 +10,10 @@ const font = Playfair_Display({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Jhunjhunwala Diamonds',
-  description: 'Jhunjhunwala Diamonds',
+  description: `Explore Jhunjhunwala Diamonds
+   for the most exquisite diamond jewelry.
+    Discover our iconic collection of engagement rings, 
+    wedding rings, diamond earrings, and other luxury jewelry.`,
 }
 
 export default function RootLayout({children,}: {children: React.ReactNode}) {
