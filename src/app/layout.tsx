@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-[#f1f5f9] relative ${font.className}`}>
+      <body className={`relative ${font.className}`}>
         <div className="flex justify-center w-full">
           <NavBar />
         </div>
