@@ -23,7 +23,7 @@ export default function ContactUs() {
 
   const constructMailtoLink = () => {
     const subject = encodeURIComponent("Query regarding jewellery");
-    const body = encodeURIComponent(`Hello ${firstName} ${lastName},
+    const body = encodeURIComponent(`Hello, am ${firstName} ${lastName},
 
 ${message}
 
@@ -40,8 +40,9 @@ ${phoneNumber}`);
           Customer Support
         </h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          We are here to help and answer any questions you might have. We look
-          forward to hearing from you.
+          Reach us out for more info and other luxury jewellery designs. We are
+          here to help and answer any queries you might have. Contact us today
+          and discover your perfect piece!
         </p>
       </div>
       <form
@@ -188,10 +189,8 @@ ${phoneNumber}`);
           <button
             type="submit"
             className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            
           >
             <a href={constructMailtoLink()}>Let's talk</a>
-            
           </button>
         </div>
       </form>
