@@ -1,35 +1,37 @@
-import NavBar from '@/components/layout/navbar'
-import './globals.css'
-import { Playfair_Display } from 'next/font/google'
-import Whatsapp from '@/components/layout/whatsapp'
-import Footer from '@/components/layout/footer'
-import Footers from '@/components/layout/footers'
+import NavBar from "@/components/layout/navbar";
+import "./globals.css";
+import { Playfair_Display } from "next/font/google";
+import Whatsapp from "@/components/layout/whatsapp";
+import Footer from "@/components/layout/footer";
+import Footers from "@/components/layout/footers";
 
-
-const font = Playfair_Display({ subsets: ['latin'] })
+const font = Playfair_Display({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Jhunjhunwala Diamonds',
-  description: `Explore Jhunjhunwala Diamonds
-   for the most exquisite diamond jewelry.
-    Discover our iconic collection of engagement rings, 
-    wedding rings, diamond earrings, and other luxury jewelry.`,
-}
+  title: "Jhunjhunwala Diamonds",
+  description: ` 
+  Explore Jhunjhunwala Diamonds'
+   iconic collection of luxury diamond 
+   jewellery at unbeatable prices, offering the perfect 
+   blend of elegance, affordability, and exceptional 
+   craftsmanship.`,
+};
 
-export default function RootLayout({children,}: {children: React.ReactNode}) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className={` relative ${font.className}`}>
-        <div className='flex justify-center w-full'>
-        <NavBar />
+      <body className={`bg-[#f1f5f9] relative ${font.className}`}>
+        <div className="flex justify-center w-full">
+          <NavBar />
         </div>
-        <div>
-        {children}
-        </div>
+        <div>{children}</div>
         <Whatsapp />
         <Footers />
-
-        </body>
+      </body>
     </html>
-  )
+  );
 }
