@@ -9,7 +9,7 @@ const CTA = () => {
     <section className="bg-slate-100 dark:bg-slate-900">
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <KenBurn
-          src="/Cta.jpg"
+          src="https://cdn.pixabay.com/photo/2023/06/22/04/19/hand-8080484_1280.jpg"
           alt="diamond Rings"
         />
         <div className="mt-4 md:mt-0">

@@ -49,8 +49,8 @@ const AboutSection = () => {
           </p>
         </TextAnimation>
         <div className="grid grid-cols-2 gap-4 mt-8">
-          <KenBurnsImage src="/about-1.jpg" alt="About Diamonds 1" />
-          <KenBurnsImage src="/about-2.jpg" alt="About Diamonds 2" />
+          <KenBurnsImage src="https://cdn.pixabay.com/photo/2023/06/22/04/19/hand-8080483_1280.jpg" alt="About Diamonds 1" />
+          <KenBurnsImage src="https://cdn.pixabay.com/photo/2023/06/22/04/17/woman-8080479_1280.jpg" alt="About Diamonds 2" />
         </div>
       </div>
     </section>

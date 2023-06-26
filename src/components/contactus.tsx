@@ -17,9 +17,7 @@ export default function ContactUs() {
   const [message, setMessage] = useState("");
   const [company, setCompany] = useState("");
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    //will do ti later
-  };
+
 
   const constructMailtoLink = () => {
     const subject = encodeURIComponent("Query regarding jewellery");
@@ -32,7 +30,9 @@ ${phoneNumber}`);
 
     return `mailto:cs@jhunjhunwaladiamonds.com?subject=${subject}&body=${body}`;
   };
-
+  const handleSubmit = async () => {
+    window.location.href = constructMailtoLink();
+  };
   return (
     <div className="isolate  bg-slate-200 px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
@@ -189,8 +189,9 @@ ${phoneNumber}`);
           <button
             type="submit"
             className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          onClick={handleSubmit}
           >
-            <a href={constructMailtoLink()}>Let's talk</a>
+           Let's talk
           </button>
         </div>
       </form>

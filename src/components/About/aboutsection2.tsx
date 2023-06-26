@@ -20,7 +20,7 @@ const About2 = () => {
     >
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div className="grid grid-cols-2 gap-4 mt-8">
-          <KenBurnsImage src="/about-4.jpg" alt="diamonds" />
+          <KenBurnsImage src="https://cdn.pixabay.com/photo/2023/06/22/04/20/jhunjhunwala-diamonds-8080485_1280.jpg" alt="diamonds" />
           <KenBurnsImage src="/about-3.avif" alt="office content 2" />
         </div>
         <TextAnimation>
