@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Switch } from "@headlessui/react";
 import axios from "axios";
+import { toast } from "react-hot-toast";
 
 function classNames(...classes: (string | boolean)[]): string {
   return classes.filter(Boolean).join(" ");
@@ -31,7 +32,12 @@ ${phoneNumber}`);
     return `mailto:cs@jhunjhunwaladiamonds.com?subject=${subject}&body=${body}`;
   };
   const handleSubmit = async () => {
-    window.location.href = constructMailtoLink();
+    window.open(constructMailtoLink(),'_blank');
+    setTimeout(() => {
+     toast.success("Thanks, for contacting us, we will respond as soon as possilble",{
+        duration: 7000,
+     });
+    }, 1000);
   };
   return (
     <div className="isolate  bg-slate-200 px-6 py-24 sm:py-32 lg:px-8">

@@ -11,7 +11,7 @@ export const testimonials = [
   {
     testimonial: 
     "I am delighted with my recent purchase of nose pin and bangles from Jhunjhunwala Diamonds! The prices were unbelievably affordable, and the quality of the nose pin exceeded my expectations. I am extremely satisfied with my experience and would highly encourage others to explore Jhunjhunwala Diamonds for their jewellery needs. You won't be disappointed!",
-    name: "Shewta Shah"
+    name: "Shweta Shah"
   },
   {
     testimonial:

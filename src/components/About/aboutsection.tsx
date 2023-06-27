@@ -41,7 +41,7 @@ const AboutSection = () => {
           </p>
           <p className="mb-4">
             From elegant solitaire rings to stunning necklaces, earrings and
-            other luxary jewellery, our diverse range of collection caters to every taste and
+            other luxury jewellery, our diverse range of collection caters to every taste and
             occasion. We understand that finding the perfect piece of jewellery
             is a deeply personal experience, which is why we offer customization
             options. You have the freedom to choose the gold purity, diamond
