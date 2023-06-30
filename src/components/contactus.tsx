@@ -22,7 +22,7 @@ export default function ContactUs() {
 
   const constructMailtoLink = () => {
     const subject = encodeURIComponent("Query regarding jewellery");
-    const body = encodeURIComponent(`Hello, am ${firstName} ${lastName},
+    const body = encodeURIComponent(`Hello,I am ${firstName} ${lastName},
 
 ${message}
 
